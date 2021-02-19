@@ -203,7 +203,7 @@ button:hover,
 .button.button-steam:hover,
 .button.button-steam:focus {
   filter: brightness(90%) }
-  
+
 /* Telegram */
 .button.button-telegram {
   color: #FFFFFF;
@@ -236,6 +236,16 @@ button:hover,
 .button.button-twitter:focus {
   filter: brightness(90%) }
 
+/* WordPress */
+.button.button-wordpress {
+  color: #FFFFFF
+  background-color: #FF0000
+  fill: #FFFFFF
+}
+.button.button-wordpress:hover,
+.button.button-wordpress:focus {
+  filter: brightness(90%) }
+
 /* YouTube */
 .button.button-youtube {
   color: #FFFFFF;
@@ -243,4 +253,3 @@ button:hover,
 .button.button-youtube:hover,
 .button.button-youtube:focus {
   filter: brightness(90%) }
-
