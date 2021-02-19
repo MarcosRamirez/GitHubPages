@@ -240,7 +240,7 @@ button:hover,
 .button.button-wordpress {
   color: #FFFFFF
   background-color: #FF0000
-  fill: #FFFFFF
+  fill: white
 }
 .button.button-wordpress:hover,
 .button.button-wordpress:focus {
