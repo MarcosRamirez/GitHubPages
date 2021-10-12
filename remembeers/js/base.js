@@ -38,7 +38,7 @@ function refreshContent() {
 
   //if (CurTime == closeHours[CurDay]-1) {
   if (CurTime == CurTime) {
-    window.location.href('./closing.html');
+    window.location.href = 'closing.html';
 
     console.log('CloseTime!!');
     console.log('Flashing!!');
