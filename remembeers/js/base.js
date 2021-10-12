@@ -37,6 +37,23 @@ function refreshContent() {
 
   if (CurTime == closeHours[CurDay]-1) {
 
+
+    console.log('Display: ' + display);
+
+    console.log('CloseTime!!');
+    console.log('Flashing!!');
+    RefreshTime = 3600000;
+    pages = ["closing.html"];
+    fetch(pages[current])
+    .then(data => data.text())
+    .then(html => document.getElementById('content').innerHTML = html);
+    console.log('Increasing current');
+
+    var intervalId = setInterval(flashScreen, 300);
+    console.log('close id: '+intervalId);
+    setTimeout(clearInterval(intervalId), 150000);
+    clearInterval(mainInterval);
+
     var duration = 60 * 30,
     display = document.querySelector('#EndService');
     countDown(duration, display);
@@ -44,21 +61,6 @@ function refreshContent() {
     var duration = 60 * 60,
     display = document.querySelector('#CloseTime');
     countDown(duration, display);
-
-    console.log('Display: ' + display);
-
-    console.log('CloseTime!!');
-    console.log('Flashing!!');
-    var intervalId = setInterval(flashScreen, 300);
-    console.log('close id: '+intervalId);
-    setTimeout(clearInterval(intervalId), 150000);
-    clearInterval(mainInterval);
-    RefreshTime = 3600000;
-    pages = ["closing.html"];
-    fetch(pages[current])
-    .then(data => data.text())
-    .then(html => document.getElementById('content').innerHTML = html);
-    console.log('Increasing current');
 
 
   }
