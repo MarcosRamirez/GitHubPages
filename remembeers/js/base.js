@@ -2,6 +2,16 @@ let pages = [
   "anuncio1.html",
   "anuncio2.html"
 ];
+
+let closeHours [
+  '06', // Sunday (really Monday)
+  '06',
+  '06',
+  '06',
+  '06',
+  '06',
+  '06'
+]
 let current = 0;
 let RefreshTime = 5000;
 
@@ -22,7 +32,9 @@ function refreshContent() {
     console.log('initializing pages array');
   }
 
-  if (curTime == "06" && CurDay == "2")
+  if (curTime == closeHours[CurDay]) {
+    console.log('CloseTime!!');
+  }
   console.log("Loaging page: " + pages[current]);
   fetch(pages[current])
   .then(data => data.text())
