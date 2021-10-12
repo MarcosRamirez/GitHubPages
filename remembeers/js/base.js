@@ -38,6 +38,7 @@ function refreshContent() {
     console.log('CloseTime!!');
     console.log('Flashing!!');
     var intervalId = setInterval(flashScreen, 300);
+    console.log('close id: '+intervalId);
     setTimeout(clearInterval(intervalId), 150000);
     RefreshTime = 3600000;
     pages = ["closing.html"];
