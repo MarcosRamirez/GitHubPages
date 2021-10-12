@@ -11,7 +11,7 @@ let CurMinute = 0;
 
 
 function init() {
-  console.log('initializing...' + curTime + ':' + CurMinute + ' ' + CurDay );
+  console.log('initializing...' + CurTime + ':' + CurMinute + ' ' + CurDay );
   setInterval(refreshContent, RefreshTime);
 }
 
