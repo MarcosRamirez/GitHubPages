@@ -12,7 +12,10 @@ body {
 .header {
   font-family: 'Fleur De Leah', sans-serif;
   font-size: 80px;
+  color: #fff;
   text-align: center;
+  background-color: #000;
+
 }
 
 #content {
