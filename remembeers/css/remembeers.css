@@ -25,7 +25,8 @@ body {
   text-align: center;
 }
 
-#EndService #content {
+
+#EndService {
   font-size: 100px;
   color: red;
 }
