@@ -4,7 +4,7 @@ let pages = [
 ];
 
 let closeHours = [
-  '06', // Sunday 
+  '06', // Sunday
   '06',
   '06',
   '06',
@@ -21,7 +21,9 @@ let CurMinute = 0;
 
 
 function init() {
+  getCurrentTime();
   console.log('initializing...' + CurTime + ':' + CurMinute + ' ' + CurDay );
+  refreshConten();
   setInterval(refreshContent, RefreshTime);
 }
 
