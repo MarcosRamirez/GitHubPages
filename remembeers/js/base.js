@@ -35,7 +35,8 @@ function refreshContent() {
     console.log('initializing pages array');
   }
 
-  if (CurTime == closeHours[CurDay]-1) {
+  //if (CurTime == closeHours[CurDay]-1) {
+  if (CurTime == 11) {
 
     console.log('CloseTime!!');
     console.log('Flashing!!');
