@@ -38,7 +38,7 @@ function refreshContent() {
   if (CurTime == closeHours[CurDay]-1) {
 
 
-
+    location.reload();
 
     console.log('CloseTime!!');
     console.log('Flashing!!');
