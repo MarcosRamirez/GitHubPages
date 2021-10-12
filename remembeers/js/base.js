@@ -54,13 +54,6 @@ function refreshContent() {
     setTimeout(clearInterval(intervalId), 150000);
     clearInterval(mainInterval);
 
-    var duration = 60 * 30,
-    display = document.querySelector('#EndService');
-    countDown(duration, display);
-
-    var duration = 60 * 60,
-    display = document.querySelector('#CloseTime');
-    countDown(duration, display);
 
     console.log('Display: ' + display);
 
@@ -113,6 +106,18 @@ function countDown(duration, display) {
             timer = duration;
         }
     }, 1000);
+}
+
+function closing {
+  var duration = 60 * 30,
+  display = document.querySelector('#EndService');
+  countDown(duration, display);
+
+  var duration = 60 * 60,
+  display = document.querySelector('#CloseTime');
+  countDown(duration, display);
+
+
 }
 
 function forceRedraw (element){
