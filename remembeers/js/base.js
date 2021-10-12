@@ -108,7 +108,7 @@ function countDown(duration, display) {
     }, 1000);
 }
 
-function closing {
+function closing() {
   var duration = 60 * 30,
   display = document.querySelector('#EndService');
   countDown(duration, display);
