@@ -3,7 +3,7 @@ current = 0;
 
 
 function init() {
-  console.log("initializing..."");
+  console.log('initializing...');
   setInterval(refreshContent, 30000);
 }
 
@@ -11,7 +11,7 @@ function init() {
 function refreshContent() {
   if (length.pages[current]-1 >= 0) {
     current=0;
-    console.log("initializing pages array");
+    console.log('initializing pages array');
   }
   console.log("Loaging page: "+pages[current]);
   fetch(pages[current])
