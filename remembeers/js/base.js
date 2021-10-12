@@ -38,7 +38,7 @@ function refreshContent() {
   if (CurTime == closeHours[CurDay]-1) {
 
 
-    console.log('Display: ' + display);
+
 
     console.log('CloseTime!!');
     console.log('Flashing!!');
@@ -62,6 +62,7 @@ function refreshContent() {
     display = document.querySelector('#CloseTime');
     countDown(duration, display);
 
+    console.log('Display: ' + display);
 
   }
   console.log("Loaging page: " + pages[current]);
