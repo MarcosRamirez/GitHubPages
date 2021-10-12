@@ -1,5 +1,5 @@
 body {
-  background: url('./img/beerburbles.gif');
+  background: url('/remembeers/img/beerburbles.gif');
   background-size: cover;
   background-repeat: repeat-y;
   background-attachment: fixed;
