@@ -1,6 +1,6 @@
-.container {
+.body {
   background: url('./img/beerburbles.gif');
-  background-size: 100%;
+  background-size: cover;
   background-repeat: repeat-y;
   background-attachment: fixed;
   height:100%;
