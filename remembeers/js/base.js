@@ -26,6 +26,7 @@ function init() {
   console.log('initializing...' + CurTime + ':' + CurMinute + ' ' + CurDay);
   refreshContent();
   mainInterval = setInterval(refreshContent, RefreshTime);
+  console.log("Current location: " + window.location.href);
 }
 
 
