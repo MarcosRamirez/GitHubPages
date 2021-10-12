@@ -51,7 +51,8 @@ function refreshContent() {
     console.log('close id: '+intervalId);
     setTimeout(clearInterval(intervalId), 150000);
     clearInterval(mainInterval);
-
+    forceRedraw('EndService');
+    forceRedraw('CloseTime');
     var duration = 60 * 30,
     display = document.querySelector('#EndService');
     countDown(duration, display);
@@ -111,4 +112,11 @@ function countDown(duration, display) {
             timer = duration;
         }
     }, 1000);
+}
+
+function forceRedraw (element){
+  var disp = element.style.display;
+  element.style.display = 'none';
+  var trick = element.offsetHeight;
+  element.style.display = disp;
 }
