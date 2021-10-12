@@ -36,7 +36,7 @@ function refreshContent() {
   }
 
   //if (CurTime == closeHours[CurDay]-1) {
-  if (CurTime == 11) {
+  if (CurTime == CurTime) {
 
     console.log('CloseTime!!');
     console.log('Flashing!!');
