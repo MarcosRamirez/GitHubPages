@@ -1,10 +1,13 @@
-global pages = ["anuncio1.html", "anuncio2.html"];
-global current = 0;
-
+let pages = [
+  "anuncio1.html",
+  "anuncio2.html"
+];
+let current = 0;
+let RefreshTime = 5000;
 
 function init() {
   console.log('initializing...');
-  setInterval(refreshContent, 30000);
+  setInterval(refreshContent, RefreshTime);
 }
 
 
