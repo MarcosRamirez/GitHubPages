@@ -9,11 +9,11 @@ function init() {
 
 
 function refreshContent() {
-  if (length.pages[current]-1 >= 0) {
+  if (length.pages[current] == null ) {
     current=0;
     console.log('initializing pages array');
   }
-  console.log("Loaging page: "+pages[current]);
+  console.log("Loaging page: " + pages[current]);
   fetch(pages[current])
   .then(data => data.text())
   .then(html => document.getElementById('content').innerHTML = html);
