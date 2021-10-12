@@ -37,7 +37,7 @@ function refreshContent() {
   if (CurTime == closeHours[CurDay]-1) {
     console.log('CloseTime!!');
     console.log('Flashing!!');
-    intervalId = setInterval(flashScreen, 300);
+    var intervalId = setInterval(flashScreen, 300);
     setTimeout(clearInterval(intervalId), 150000);
     RefreshTime = 3600000;
     pages = ["closing.html"];
