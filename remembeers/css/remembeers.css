@@ -19,6 +19,7 @@ body {
 }
 
 #content {
+  display: flex;
   font-family: 'Unna', serif;
   font-size: 50px;
   height: 100%;
