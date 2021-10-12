@@ -55,6 +55,4 @@ function getCurrentTime() {
 
   if (CurDay < 10) CurDay = '0'+CurDay;
   if (CurTime < 10) curTime = '0'+CurTime;
-  }
-
 }
