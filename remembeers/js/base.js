@@ -35,6 +35,15 @@ function refreshContent() {
   }
 
   if (CurTime == closeHours[CurDay]-1) {
+
+    var duration = 60 * 30,
+    display = document.querySelector('#EndService');
+    countDown(duration, display);
+
+    var duration = 60 * 60,
+    display = document.querySelector('#CloseTime');
+    countDown(duration, display);
+
     console.log('CloseTime!!');
     console.log('Flashing!!');
     var intervalId = setInterval(flashScreen, 300);
@@ -73,4 +82,21 @@ function flashScreen () {
 
   document.body.style.background = color;
 
+}
+
+function countDown(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
 }
