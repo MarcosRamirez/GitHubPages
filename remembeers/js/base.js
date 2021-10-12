@@ -19,12 +19,13 @@ let CurTime = 0;
 let CurDay = 0;
 let CurMinute = 0;
 let BackgroundColor = 1;
+let mainInterval = 0;
 
 function init() {
   getCurrentTime();
   console.log('initializing...' + CurTime + ':' + CurMinute + ' ' + CurDay);
   refreshContent();
-  setInterval(refreshContent, RefreshTime);
+  mainInterval = setInterval(refreshContent, RefreshTime);
 }
 
 
@@ -49,8 +50,15 @@ function refreshContent() {
     var intervalId = setInterval(flashScreen, 300);
     console.log('close id: '+intervalId);
     setTimeout(clearInterval(intervalId), 150000);
+    clearInterval(mainInterval);
     RefreshTime = 3600000;
     pages = ["closing.html"];
+    fetch(pages[current])
+    .then(data => data.text())
+    .then(html => document.getElementById('content').innerHTML = html);
+    console.log('Increasing current');
+
+
   }
   console.log("Loaging page: " + pages[current]);
   fetch(pages[current])
