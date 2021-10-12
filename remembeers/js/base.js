@@ -22,7 +22,7 @@ let CurMinute = 0;
 
 function init() {
   getCurrentTime();
-  console.log('initializing...' + CurTime + ':' + CurMinute + ' ' + CurDay );
+  console.log('initializing...' + CurTime + ':' + CurMinute + ' ' + CurDay + '(' + closeHours[CurDay]-1 + ')');
   refreshContent();
   setInterval(refreshContent, RefreshTime);
 }
