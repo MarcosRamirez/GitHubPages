@@ -4,13 +4,13 @@ let pages = [
 ];
 
 let closeHours = [
-  '07', // Sunday
-  '07',
-  '07',
-  '07',
-  '07',
-  '07',
-  '07'
+  '08', // Sunday
+  '08',
+  '08',
+  '08',
+  '08',
+  '08',
+  '08'
 ]
 let current = 0;
 let RefreshTime = 5000;
