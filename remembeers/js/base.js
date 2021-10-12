@@ -1,5 +1,5 @@
-pages = ["anuncio1.html", "anuncio2.html"];
-current = 0;
+global pages = ["anuncio1.html", "anuncio2.html"];
+global current = 0;
 
 
 function init() {
