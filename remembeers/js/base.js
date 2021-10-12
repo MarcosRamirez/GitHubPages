@@ -4,7 +4,7 @@ let pages = [
 ];
 
 let closeHours = [
-  '06', // Sunday (really Monday)
+  '06', // Sunday 
   '06',
   '06',
   '06',
