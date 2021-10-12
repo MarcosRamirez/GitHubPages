@@ -4,13 +4,13 @@ let pages = [
 ];
 
 let closeHours = [
-  '06', // Sunday
-  '06',
-  '06',
-  '06',
-  '06',
-  '06',
-  '06'
+  '07', // Sunday
+  '07',
+  '07',
+  '07',
+  '07',
+  '07',
+  '07'
 ]
 let current = 0;
 let RefreshTime = 5000;
@@ -52,4 +52,9 @@ function getCurrentTime() {
   CurDay = now.getDay();
   CurTime = now.getHours();
   CurMinute = now.getMinutes();
+
+  if (CurDay < 10) CurDay = '0'+CurDay;
+  if (CurTime < 10) curTime = '0'+CurTime;
+  }
+
 }
