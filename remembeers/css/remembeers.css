@@ -24,9 +24,3 @@ body {
   height: 100%;
   text-align: center;
 }
-
-span {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: normal;
-}
