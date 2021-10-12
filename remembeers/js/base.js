@@ -45,6 +45,8 @@ function refreshContent() {
     display = document.querySelector('#CloseTime');
     countDown(duration, display);
 
+    console.log('Display: ' + display);
+
     console.log('CloseTime!!');
     console.log('Flashing!!');
     var intervalId = setInterval(flashScreen, 300);
@@ -101,6 +103,7 @@ function countDown(duration, display) {
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
 
+        //display.textContent = minutes + ":" + seconds;
         display.textContent = minutes + ":" + seconds;
 
         if (--timer < 0) {
