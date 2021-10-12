@@ -21,6 +21,7 @@ body {
 #content {
   font-family: 'Unna', serif;
   font-size: 50px;
+  height: 100%;
   text-align: center;
 }
 
