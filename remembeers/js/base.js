@@ -34,7 +34,7 @@ function refreshContent() {
     console.log('initializing pages array');
   }
 
-  if (curTime == closeHours[CurDay]) {
+  if (CurTime == closeHours[CurDay]) {
     console.log('CloseTime!!');
   }
   console.log("Loaging page: " + pages[current]);
