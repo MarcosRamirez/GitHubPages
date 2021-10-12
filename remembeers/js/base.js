@@ -34,8 +34,10 @@ function refreshContent() {
     console.log('initializing pages array');
   }
 
-  if (CurTime == closeHours[CurDay]) {
+  if (CurTime == closeHours[CurDay]-1) {
     console.log('CloseTime!!');
+    RefreshTime = 3600000;
+    pages = ["closing.html"];
   }
   console.log("Loaging page: " + pages[current]);
   fetch(pages[current])
@@ -53,6 +55,5 @@ function getCurrentTime() {
   CurTime = now.getHours();
   CurMinute = now.getMinutes();
 
-  //if (CurDay < 10) CurDay = '0'+CurDay;
   if (CurTime < 10) CurTime = '0'+CurTime;
 }
