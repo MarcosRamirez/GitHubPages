@@ -12,7 +12,7 @@ function init() {
 
 
 function refreshContent() {
-  if (length.pages[current] == null ) {
+  if (pages[current] == null ) {
     current=0;
     console.log('initializing pages array');
   }
