@@ -51,8 +51,8 @@ function refreshContent() {
     console.log('close id: '+intervalId);
     setTimeout(clearInterval(intervalId), 150000);
     clearInterval(mainInterval);
-    forceRedraw('EndService');
-    forceRedraw('CloseTime');
+    forceRedraw('#EndService');
+    forceRedraw('#CloseTime');
     var duration = 60 * 30,
     display = document.querySelector('#EndService');
     countDown(duration, display);
