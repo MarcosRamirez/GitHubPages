@@ -54,5 +54,5 @@ function getCurrentTime() {
   CurMinute = now.getMinutes();
 
   if (CurDay < 10) CurDay = '0'+CurDay;
-  if (CurTime < 10) curTime = '0'+CurTime;
+  if (CurTime < 10) CurTime = '0'+CurTime;
 }
