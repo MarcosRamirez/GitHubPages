@@ -36,6 +36,8 @@ function refreshContent() {
 
   if (CurTime == closeHours[CurDay]-1) {
     console.log('CloseTime!!');
+    setInterval(flashScreen, 300);
+    setTimeout(clearInterval(flashScreen), 1500);
     RefreshTime = 3600000;
     pages = ["closing.html"];
   }
@@ -56,4 +58,17 @@ function getCurrentTime() {
   CurMinute = now.getMinutes();
 
   if (CurTime < 10) CurTime = '0'+CurTime;
+}
+
+function flashScreen () {
+  if (x === 1) {
+      color = "#000";
+      x = 2;
+  } else {
+      color = "#fff";
+      x = 1;
+  }
+
+  document.body.style.background = color;
+
 }
