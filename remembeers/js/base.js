@@ -3,7 +3,7 @@ let pages = [
   "anuncio2.html"
 ];
 
-let closeHours [
+let closeHours = [
   '06', // Sunday (really Monday)
   '06',
   '06',
