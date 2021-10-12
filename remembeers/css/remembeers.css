@@ -9,11 +9,12 @@ body {
   margin:0;
 }
 
-header {
+.header {
   font-family: 'Fleur De Leah', sans-serif;
-  font-size: 30px;
+  font-size: 80px;
   text-align: center;
+}
 
-
-
+.content {
+  text-align: center;
 }
