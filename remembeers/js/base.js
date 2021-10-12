@@ -18,7 +18,7 @@ let RefreshTime = 5000;
 let CurTime = 0;
 let CurDay = 0;
 let CurMinute = 0;
-
+let BackgroundColor = 1;
 
 function init() {
   getCurrentTime();
@@ -62,12 +62,12 @@ function getCurrentTime() {
 }
 
 function flashScreen () {
-  if (x === 1) {
+  if (BackgroundColor === 1) {
       color = "#000";
-      x = 2;
+      BackgroundColor = 2;
   } else {
       color = "#fff";
-      x = 1;
+      BackgroundColor = 1;
   }
 
   document.body.style.background = color;
