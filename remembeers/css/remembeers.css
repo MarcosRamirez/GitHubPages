@@ -15,15 +15,21 @@ body {
   color: #fff;
   text-align: center;
   background-color: #000;
-
+}
+#container {
+  width: 100%;
 }
 
 #content {
   font-family: 'Unna', serif;
   font-size: 50px;
-  height: 100%;
-  text-align: center;
-  vertical-align: middle;
+  display: flex;
+  width: 50%;
+  height: 600px;
+  margin: auto;
+  align-items:center;
+  justify-content:center;
+
 }
 
 #EndService {
