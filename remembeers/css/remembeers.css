@@ -28,8 +28,8 @@ body {
   height: 600px;
   margin: auto;
   align-items:center;
+  flex-direction: column;
   justify-content:center;
-
 }
 
 #EndService {
