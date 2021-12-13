@@ -59,7 +59,7 @@ function refreshContent() {
 
   }
 
-  console.log("Loaging page: " + pages[current]);
+  console.log("Loaging page: " + pages[current] + "(" + current + ")");
   fetch(pages[current])
   .then(data => data.text())
   .then(html => document.getElementById('content').innerHTML = html);
