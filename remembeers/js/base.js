@@ -15,7 +15,7 @@ let closeHours = [
   '11'
 ]
 let current = 0;
-let RefreshTime = 5000;
+let RefreshTime = 60000;
 
 let CurTime = 0;
 let CurDay = 0;
