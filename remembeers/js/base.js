@@ -37,7 +37,7 @@ function refreshContent() {
   }
 
   //if (CurTime == closeHours[CurDay]-1) {
-  if (CurTime == CurTime) {
+  if (CurTime != CurTime) { //never runs, obv...
     window.location.href = 'closing.html';
 
     console.log('CloseTime!!');
