@@ -22,11 +22,11 @@ let BackgroundColor = 1;
 let mainInterval = 0;
 
 function init() {
-  getCurrentTime();
-  console.log('initializing...' + CurTime + ':' + CurMinute + ' ' + CurDay);
+//  getCurrentTime();
+//  console.log('initializing...' + CurTime + ':' + CurMinute + ' ' + CurDay);
   refreshContent();
   mainInterval = setInterval(refreshContent, RefreshTime);
-  console.log("Current location: " + window.location.href);
+//  console.log("Current location: " + window.location.href);
 }
 
 
@@ -63,9 +63,9 @@ function refreshContent() {
   fetch(pages[current])
   .then(data => data.text())
   .then(html => document.getElementById('content').innerHTML = html);
-  //console.log('Increasing current');
   current++;
-  console.log('Increasing current: ' + current);
+
+  console.log('Increasing current: ' + current + "Next: (" + pages[current] + ")");
 }
 
 
