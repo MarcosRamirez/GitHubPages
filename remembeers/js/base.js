@@ -58,13 +58,14 @@ function refreshContent() {
     console.log('Display: ' + display);
 
   }
+
   console.log("Loaging page: " + pages[current]);
   fetch(pages[current])
   .then(data => data.text())
   .then(html => document.getElementById('content').innerHTML = html);
-  console.log('Increasing current');
+  //console.log('Increasing current');
   current++;
-
+  console.log('Increasing current: ' + current);
 }
 
 
