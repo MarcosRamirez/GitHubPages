@@ -1,6 +1,8 @@
 let pages = [
   "anuncio1.html",
-  "anuncio2.html"
+  "anuncio2.html",
+  "anuncio3.html",
+  "anuncio4.html"
 ];
 
 let closeHours = [
