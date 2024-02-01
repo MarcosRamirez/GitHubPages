@@ -1,0 +1,15 @@
+---
+const { href, follow } = Astro.props;
+const target = isLocalURL(href) ? "_self" : "_blank";
+const nofollow = follow ? "nofollow" : "";
+
+function isLocalURL(url: string) {
+  url = String(url);
+  if (url.startsWith("/") || url.startsWith("#")) {
+    return true;
+  }
+  return false;
+}
+---
+
+<a href={href} rel={nofollow} target={target}> <slot /> </a>

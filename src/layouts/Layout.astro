@@ -1,0 +1,41 @@
+---
+const { title, description, keywords } = Astro.props;
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer/Footer.astro"
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link href="/styles.css" rel="stylesheet" /> 
+		<meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} /> 
+    <meta name="author" content="Marcos Ramírez" />
+    <meta name="generator" content={"Marcos Ramirez with: " + Astro.generator} />
+    <meta name="keywords" content={keywords} />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3XNP18HWLJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3XNP18HWLJ');
+  </script>
+
+		<title>{title}</title>
+
+
+	</head>
+	<body>
+    <Header />
+    <main>
+     <slot />
+	  </main>
+
+    <Footer />
+	
+	</body>
+</html>
