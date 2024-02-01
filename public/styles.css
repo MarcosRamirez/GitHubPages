@@ -27,10 +27,26 @@ html, body {
   left: 0;
   width: 100%;
   padding: 20px 100px;
-  background-color: seagreen;
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  a {
+    margin-left: 2rem;
+    text-decoration: none;
+  }
+  .logo {
+    padding: 2px 2px 2px 2px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+}
+
+.logo {
+  font-size: 32px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 h1,h2,h3,h4,h5,h6 {
