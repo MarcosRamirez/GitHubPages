@@ -1,0 +1,21 @@
+---
+const { image } = Astro.props;
+const imageUrl = 'url('+image+');';
+console.log(imageUrl);
+---
+
+<span class="image-text"><slot /></span>
+
+<style define:vars={ {imageUrl} }>
+
+  .image-text {
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: var(--imageUrl);
+    background-size: cover;
+    background-position: center;;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+  }
+
+</style>

@@ -1,11 +1,12 @@
 ---
+import ImageText from "../components/ImageText.astro";
 import Link from "../components/Link.astro";
 import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout title="Marcos Ramirez" description="web personal de Marcos Ramirez" keywords="Marcos Ramírez, Ramirez, web, personal, blog">
-  <img src="/images/avatar.png" alt="Marcos Ramírez" />
-  <h1>Marcos Ramírez</h1>
+  <img src="/images/avatar.png" alt="Marcos Ramírez">
+  <h1><ImageText image="/images/Binary.jpg">Marcos Ramírez</ImageText></h1>
   <h2>Software Engineer, Poker Player, Puzzle Addict!</h2>
 	
 		<p>
@@ -35,7 +36,7 @@ import Layout from "../layouts/Layout.astro"
 </Layout>
 
 <style>
-	main {
-  margin-top: 420px;
+h2 {
+	margin-top: -40px;
 }
 </style>
