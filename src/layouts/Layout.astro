@@ -2,6 +2,7 @@
 const { title, description, keywords } = Astro.props;
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer/Footer.astro"
+import GoogleAnalytics from "../components/GoogleAnalytics.astro"
 ---
 
 <html lang="es">
@@ -15,15 +16,7 @@ import Footer from "../components/Footer/Footer.astro"
     <meta name="generator" content={"Marcos Ramirez with: " + Astro.generator} />
     <meta name="keywords" content={keywords} />
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3XNP18HWLJ"></script>
-  <script is:inline>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-3XNP18HWLJ');
-  </script>
+    <GoogleAnalytics gtagId='G-3XNP18HWLJ' />
 
 		<title>{title}</title>
 
