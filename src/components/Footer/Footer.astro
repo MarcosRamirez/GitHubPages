@@ -2,7 +2,7 @@
 
 ---
 <footer>
-  <img src="/images/copyleft.svg"> 1999-2024 Marcos Ramirez
+  <span class="copy-left">&copy;</span> 1999-2024 Marcos Ramirez
 </footer>
 
 <style>
@@ -18,4 +18,17 @@
     padding: 15px 50px;
     background-color: #000000;
   }
+
+  .copy-left {
+     display: inline-block;
+     text-align: right;
+     margin: 2px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    size: 5rem;
+}
 </style>
