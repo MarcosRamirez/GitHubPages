@@ -10,7 +10,7 @@ import GoogleAnalytics from "../components/GoogleAnalytics.astro"
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link href="/styles.css" rel="stylesheet" /> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="description" content={description} /> 
     <meta name="author" content="Marcos Ramírez" />
     <meta name="generator" content={"Marcos Ramirez with: " + Astro.generator} />
@@ -22,7 +22,7 @@ import GoogleAnalytics from "../components/GoogleAnalytics.astro"
 
 
 	</head>
-	<body>
+	<body class="responsive">
     <Header />
     <main>
      <slot />
