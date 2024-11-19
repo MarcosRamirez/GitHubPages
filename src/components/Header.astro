@@ -3,43 +3,75 @@ import Link from "./Link.astro";
 ---
 
 <header>
-
   <div class="navbar">
-  <a href="/" >Marcos Ramírez</a>
-  <nav>
-    <a href="https://blog.marcosramirez.info" target="_blank">Blog</a> 
-    <a href="/marcos-ramirez-la-novela">La novela</a> 
-    <a href="/sobre-mi">Sobre Mi</a>
-  </nav>
-</div>
+    <a href="/" class="brand">Marcos Ramírez</a>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <nav class="nav-menu">
+      <a href="https://blog.marcosramirez.info" target="_blank">Blog</a> 
+      <a href="/marcos-ramirez-la-novela">La novela</a> 
+      <a href="/sobre-mi">Sobre Mi</a>
+    </nav>
+  </div>
 </header>
 
 <style>
   .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 100px;
-  background-color: #000000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  a {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar nav {
+    margin-left: auto;
+    display: flex;
+  }
+
+  .navbar a {
     margin-left: 2rem;
     text-decoration: none;
+    color: white;
   }
-  .logo {
-    padding: 2px 2px 2px 2px;
-    border-radius: 50%;
-    background-color: #aca6a6;
-  }
-}
 
-.logo {
-  font-size: 32px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 700;
-}
+  .menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .navbar nav {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #000000;
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+
+    .navbar nav a {
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    .menu-icon {
+      display: block;
+    }
+
+    .menu-toggle:checked + .menu-icon + .nav-menu {
+      display: flex;
+    }
+  }
 </style>
