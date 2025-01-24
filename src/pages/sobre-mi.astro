@@ -1,14 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Link from "../components/Link.astro"
 
 --- 
 
 <Layout title="Sobre mi" keywords="about,sobre,mi,Marcos,Ramírez,Ramirez" description="Información personal sobre Marcos Ramírez">
 
-  <h1>Quien es Marcos Ramirez</h1>
+  <section class="top-2 place-content-start"">
 
-Pues soy un informático de la época del pleistoceno casi ya...
+    <h1 class="text-6xl text-white p-10">Quien es Marcos Ramirez</h1>
+    <p class="text-base text-pretty text-white">
 
-Mi primer contacto con un PC fué un <a href="https://es.wikipedia.org/wiki/Dragon_32/64" target="_blank">Dragon 32</a>, calculad lo viejo que soy, asi que... sed pacientes, que en breve tendréis la historia completa.
+      Pues soy un informático de la época del pleistoceno casi ya...
+      
+      Mi primer contacto con un PC fué un <Link href="https://es.wikipedia.org/wiki/Dragon_32/64" target="_blank">Dragon 32</Link>, calculad lo viejo que soy, asi que... sed pacientes, que en breve tendréis la historia completa.
+    </p>
+  </section>
 
 </Layout>
