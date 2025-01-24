@@ -2,7 +2,6 @@
 const { title, description, keywords } = Astro.props;
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer/Footer.astro"
-import GoogleAnalytics from "../components/GoogleAnalytics.astro"
 ---
 
 <html lang="es">
@@ -20,7 +19,7 @@ import GoogleAnalytics from "../components/GoogleAnalytics.astro"
 
 
 	</head>
-	<body class="responsive">
+	<body class="min-h-screen bg-gray-900 transition-colors duration-200">
     <Header />
     <main>
      <slot />

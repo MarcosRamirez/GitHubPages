@@ -5,17 +5,18 @@ import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout title="Marcos Ramirez" description="web personal de Marcos Ramirez" keywords="Marcos Ramírez, Ramirez, web, personal, blog">
-  <img src="/images/avatar.png" alt="Marcos Ramírez">
-  <h1>Marcos Ramírez</h1>
-  <h2>Software Engineer, Poker Player, Puzzle Addict!</h2>
+	<section class="flex content-center flex-col w-auto">
+  <img class="w-52 align-middle" src="/images/avatar.png" alt="Marcos Ramírez">
+  <h1 class="text-white text-6xl">Marcos Ramírez</h1>
+  <h2 class="text-white text-3xl pb-10">Software Engineer, Poker Player, Puzzle Addict!</h2>
 	
-		<p>
+		<p class="text-pretty text-base">
 			Este es mi dominio personal, aquí encontrarás un poco de todo, si quieres saber más sobre el 
 			<Link href="https://marcosramirez.dev">Marcos Ramírez</Link> programador/ingeniero, haz click en el <Link href="https://marcosramirez.dev">enlace</Link>. 
 		</p>	
 
-		<p>Si quieres saber sobre mi a titulo mas personal <Link href="/sobre-mi">haz click</Link></p>
-		<p>
+		<p class="text-pretty text-base">Si quieres saber sobre mi a titulo mas personal <Link href="/sobre-mi">haz click</Link></p>
+		<p class="text-pretty text-base">
 		El motivo de existir de esta pagina es que desde hace un tiempo, me dedico a intentar posicionar en Google mejor que la cantidad de tocayos "famosos" que tengo:
 		<ul>
 			<li><strong>Marcos Ramírez</strong> el de las motos</li>
@@ -32,11 +33,6 @@ import Layout from "../layouts/Layout.astro"
 		Aunque probablemente estés aquí por que quieres <Link href="https://marcosramirez.dev">descargar mi Curriculum</Link> en Word, PDF, etc...
 		
 		O, por que quieres saber más sobre mí.
-
+	</section>
 </Layout>
 
-<style>
-h2 {
-	margin-top: -40px;
-}
-</style>
